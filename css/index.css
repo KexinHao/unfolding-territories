@@ -1,0 +1,25 @@
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100;1,400;1,500;1,700&display=swap');
+* {
+}
+
+html {
+}
+
+body {
+  background: url(../images/UT-VI_220107_launching.jpg);
+  background-size: 97%,cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: url(../images/UT-VI_220107_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+}
