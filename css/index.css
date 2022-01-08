@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Favorit-Bold";
-  src: url("../fonts/Favorit-Bold.woff");
+  font-family: "Favorit-Bold", sans-serif; font-weight:500; font-style: normal;
+  src: url("../fonts/Favorit-Bold.woff") format('woff')
+       url("../fonts/Favorit-Bold.ttf") format('truetype');
+
+  font-family: "Cormorant Garamond"; font-style: italic;
+  src: url("../fonts/CormorantGaramond-LightItalic.ttf") format('truetype');
+
+  font-family: "Cormorant Garamond"; font-style:normal;
+  src: url("../fonts/CormorantGaramond-Light.ttf") format('truetype');
 }
 
 */
