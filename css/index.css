@@ -4,10 +4,14 @@
        url("../fonts/Favorit-Bold.ttf") format('truetype');
 
   font-family: "Cormorant Garamond"; font-style: italic;
-  src: url("../fonts/CormorantGaramond-LightItalic.ttf") format('truetype');
+  src:url("../fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff") format('woff'),
+      url("../fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff2") format('woff2'),url(),
+      url("../fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf") format('truetype');
 
-  font-family: "Cormorant Garamond"; font-style:normal;
-  src: url("../fonts/CormorantGaramond-Light.ttf") format('truetype');
+  font-family: "Cormorant Garamond"; font-style: normal;
+  src:  url("../fonts/Cormorant_Garamond/CormorantGaramond-Light.woff") format('woff'),
+        url("../fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff2") format('woff2'),
+        url("../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf") format('truetype');
 }
 
 
@@ -58,7 +62,7 @@ nav{
   padding-right:1rem;
   text-align: center;
   font-size: 1.3rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond';
   font-style: italic;
   font-weight: 600;
 }
@@ -73,7 +77,7 @@ nav{
 .center-text p{
   margin:-4rem;
   text-align: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond';
   font-size: 7rem;
   font-style: italic;
   font-weight: 300;
@@ -99,6 +103,7 @@ nav{
 }
 .card-content{
   position:absolute;
+  overflow-y: scroll;
 }
 .card-front{
   height: 100%;
@@ -109,6 +114,7 @@ nav{
   z-index: 1;
   border: 2px dotted #b05a6f;
   background-color: #d1ebff;
+
 }
 img{
   display: block;
@@ -152,41 +158,23 @@ img{
 
 
 .footer {
-  position:fixed;
+  /* position:fixed; */
   z-index: 99;
-  bottom: 0;
+  /* bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   padding-top: 0rem;
-  padding-left:1rem;
-  padding-right:1rem;
-
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
+  justify-content: space-around;
   background-color: white;
   border-top: 2px dotted #b05a6f;
   color: #b05a6f;
 }
-.footer-leftpart{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-.footer-rightpart{
-  flex-grow: 1;
-  text-align: right;
-}
-.footer-leftpart div > p{
+.footer > div{
   border-right: 2px dotted #b05a6f;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.footer-rightpart div > p{
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 #footer-title{
   font-family: 'Cormorant Garamond', serif;
@@ -195,17 +183,22 @@ img{
   font-size: 1.3rem;
 }
 #footer-date{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Sora', sans-serif;
   /* font-family: "Favorit-Bold"; */
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 #footer-location{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Sora', sans-serif;
   /* font-family: "Favorit-Bold"; */
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 #socialmedia{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Sora', sans-serif;
+  /* font-family: "Favorit-Bold"; */
+  font-size: 1rem;
+}
+#credit{
+  font-family: 'Sora', sans-serif;
   /* font-family: "Favorit-Bold"; */
   font-size: 1rem;
 }
@@ -229,13 +222,14 @@ img{
     height: 16rem;
   }
   .card-body{
-    text-align: justify;
-    font-size: 0.87rem;
+    /* text-align: justify; */
+    font-size: 0.8rem;
   }
   .card-body > h3{
-    display: none;
+    margin:0;
   }
   .center-text p{
+    display: none;
     margin:-1.4rem;
     font-size: 4rem;
   }
@@ -246,34 +240,19 @@ img{
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
-    justify-content: center;
-  }
-  .footer-leftpart{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    align-items: center;
     justify-content:space-around;
+    padding-left:0;
+    padding-right:0;
+    padding-top:2px;
   }
-  .footer-leftpart div > p{
+  .footer > div{
     border-bottom: 2px dotted #b05a6f;
     border-right: 0;
-    margin:5px;
+    padding-right: 0;
+    padding-left: 0;
   }
-  .footer-rightpart div > p{
-    margin:5px;
-  }
-  #footer-title{
-    font-size: 1rem;
-    text-align: center;
-  }
-  #footer-date{
-    font-size: 1rem;
-  }
-  #footer-location{
-    font-size: 1rem;
-  }
-  #socialmedia{
-    display: none;
+  .footer > div >p{
+    font-size: 0.8rem;
+    margin:2px;;
   }
 }
