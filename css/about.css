@@ -107,7 +107,7 @@ nav{
 .whole-column{
   padding-left: 1.5rem;
   padding-right: 2rem;
-  width:100%;
+  /* width:100%; */
 }
 .txt-container > div > div > p{
   color:#b05a6f;
@@ -233,6 +233,10 @@ nav{
   .right-column{
     width:100%;
     order:2;
+    padding: 0;
+  }
+  .whole-column{
+    width:100%;
     padding: 0;
   }
   .txt-container > div > div > p{
