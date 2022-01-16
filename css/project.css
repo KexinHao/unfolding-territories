@@ -108,12 +108,12 @@ nav{
 .txt-container > div > div > .tag{
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 .txt-container > div > div > #special{
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 .txt-container > div > div > h{
   color:#b05a6f;
@@ -129,35 +129,42 @@ nav{
 #artist-name{
   font-style: normal;
 }
+.caption > p{
+  color:#b05a6f;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
 
 .img-container{
-  margin:3rem;
+  display:flex;
+  flex-wrap: wrap;
+  margin:2rem;
+  align-content:space-around;
 }
-.img-container > img{
+.img-container > .img-box{
+  padding:1rem;
+}
+.img-container > .img-box > img{
   display: block;
-  padding-bottom:2rem;
+  width:100%;
 }
 #L-pic{
   width:100%;
-  height:auto;
 }
 #M-pic{
-  width:35rem;
-  height:auto;
+  width:70%;
 }
 #S-pic{
-  width:20rem;
-  height:auto;
+  width:46%;
 }
 .audio-container{
-  position: relative;
-  margin-bottom:2rem;
+  margin:1rem;
 }
 .audio-container > audio{
-  position: absolute;
-  width:60%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  width:100%;
 }
 .vid-container{
   margin:3rem;
@@ -282,8 +289,7 @@ nav{
   .img-container{
     margin:7px;
   }
-  .img-container > img{
-    display: block;
+  .img-container > .img-box{
     padding-bottom:7px;
   }
   #L-pic{
