@@ -103,7 +103,7 @@ nav{
 }
 .card-content{
   position:absolute;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .card-front{
   height: 100%;
@@ -219,7 +219,7 @@ img{
   }
 
   .card{
-    height: 16rem;
+    height: 17rem;
   }
   .card-body{
     /* text-align: justify; */
