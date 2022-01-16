@@ -89,7 +89,7 @@ nav{
   /* padding:1rem; */
   border-bottom: 2px dotted #b05a6f;
 }
-.txt-container > #row-7{
+.txt-container > #row-8{
   border-bottom: 0;
 }
 .left-column{
@@ -103,6 +103,11 @@ nav{
   padding-right: 2rem;
   order:2;
   width:65%;
+}
+.whole-column{
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  width:100%;
 }
 .txt-container > div > div > p{
   color:#b05a6f;
@@ -232,34 +237,5 @@ nav{
   }
   .txt-container > div > div > p{
     font-size: 0.9rem;
-  }
-  #special{
-    font-size: 0.9rem;
-  }
-  .txt-container > div > div > h{
-    font-size: 2rem;
-    /* border-bottom: dotted 2px #b05a6f; */
-  }
-  .img-container{
-    margin:7px;
-  }
-  .img-container > img{
-    display: block;
-    padding-bottom:7px;
-  }
-  #L-pic{
-    width:100%;
-    height:auto;
-  }
-  #M-pic{
-    width:100%;
-    height:auto;
-  }
-  #S-pic{
-    width:100%;
-    height:auto;
-  }
-  .vid-container > iframe{
-    height:300px;
   }
 }
