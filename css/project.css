@@ -323,7 +323,7 @@ nav{
     font-size: 0.9rem;
   }
   .txt-container > div > div > #work-subtitle{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     border-bottom: dotted 2px #b05a6f;
   }
   .txt-container > div > div > #artist-name{
