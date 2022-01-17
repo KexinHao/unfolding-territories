@@ -112,7 +112,7 @@ nav{
 }
 .txt-container > div > div > #special{
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
+  font-size: 1.18rem;
   font-weight: 800;
 }
 .txt-container > div > div > h{
@@ -320,7 +320,7 @@ nav{
     font-size: 0.9rem;
   }
   .txt-container > div > div > #special{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .txt-container > div > div > #work-subtitle{
     /* font-size: 2rem; */
