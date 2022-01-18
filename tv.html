@@ -11,19 +11,31 @@
   <title>Unfolding Territories</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/project.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/main.js"></script> -->
+  <link rel="stylesheet" href="css/tv.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- <link rel="shortcut icon" type="image/x-icon" href="images/LogoM.ico"> -->
-</head>
+  <script>
+
+  $(function(){
+  // $(function(){
+     $('.tag').click(function(){
+         $('#island-' + $(this).attr('id')).show();
+         $('.vid-container > div').not('#island-' + $(this).attr('id')).hide();
+         $('#info' + $(this).attr('id')).show();
+         window.location.hash = $(this).attr('id');
+        });
+     })
+    </script>
+  </head>
 
 <body>
-  <section class="topbar">
+  <div class="topbar" id="top">
   <nav>
     <a href="index.html">
       HOME
@@ -41,18 +53,37 @@
       PUBLICATION
     </a>
   </nav>
-</section>
+</div>
+<div class="topbar" id="under">
+<nav>
+  <a class="tag" id="subtly">
+    Subtly
+  </a>
+  <a class="tag" id="loosely">
+    Loosely
+  </a>
+  <a class="tag" id="radically">
+    Radically
+  </a>
+  <a class="tag" id="otherly">
+    Otherly
+  </a>
+  <a class="tag" id="closely">
+    Closely
+  </a>
+</nav>
+</div>
 
 
 <!-- content -->
   <section class="TV-content">
 
     <div class="vid-container">
-      <iframe src="https://www.youtube.com/embed/RQE8cChn2WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="caption">
-        <p>
-        </p>
-      </div>
+      <div id="island-subtly" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/666586776?h=2c4ec542ba&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div id="island-loosely" style="display: none; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/666690076?h=469164009f&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div id="island-radically" style="display: none; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/666489165?h=2e903b219b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div id="island-otherly" style="display: none; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/666475154?h=56fe27103a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div id="island-closely" style="display: none; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/666463507?h=ebe4220c2e&color=FFFFFF&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </div>
 
   </section>
